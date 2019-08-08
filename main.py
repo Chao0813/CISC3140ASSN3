@@ -15,7 +15,7 @@ def home():
     read = urlobj.read()
     decode = json.loads(read.decode('utf-8'))
     image = decode['url'
-    return render_template('layout1.html', image=image)
+    return render_template('layout.html', image=image)
 @app.route('/key', methods=['POST'])
 def key():
     key = request.form['apikey']
