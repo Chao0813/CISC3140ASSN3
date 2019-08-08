@@ -20,7 +20,7 @@ def home():
 def key():
     key = request.form['apikey']
     image = buildURL(url, key)
-    return render_template('layout1.html', image=image)
+    return render_template('layout.html', image=image)
 
 if __name__ == '__main__':
    app.run(host='127.0.0.1', port=8080, debug=True)
